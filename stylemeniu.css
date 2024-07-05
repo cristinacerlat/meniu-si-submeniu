@@ -1,0 +1,67 @@
+ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style-type: none;
+    background-color: #787878;
+}
+
+li {
+    float: left;
+    border-right: 1px solid white;
+}
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: #13dd1d;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a i {
+    margin-right: 5px;
+}
+
+li a.active {
+    background-color: #0f4c12;
+    font-weight: bold;
+}
+
+li a:hover {
+    background-color: #d18e8e;
+    text-decoration: underline;
+}
+
+li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #88f1ad;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+li .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+li .dropdown-content a:hover {
+    background-color: #747474;
+}
+
+li:hover .dropdown-content {
+    display: block;
+}
+
+li .dropdown-content a::before {
+    content: "-";
+    margin-right: 5px;
+}
